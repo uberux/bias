@@ -1,0 +1,14 @@
+---
+layout: default
+active: home
+---
+
+<div class="">
+  <h1>Bias list</h1>
+  {% for bias in site.data.bias %}
+  <div class="bias-list middle-md">
+    <h2>{{ bias.name }}</h2>
+    <p><a href="{{ bias.link }}"></a>{{ bias.short-description }}</p>
+  </div>
+  {% endfor %}
+</div>

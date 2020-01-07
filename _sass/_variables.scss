@@ -1,0 +1,35 @@
+//Colors
+$beige: #F5F5EB;
+$golden: #DDCA33;
+$gray: #575758;
+$light-gray: #efefef;
+$wine: #7f1f1f;
+
+
+// Fonts
+    $base-font: 'Montserrat', sans-serif;
+    $base-font-size:   16px;
+    $base-font-weight: 300;
+    $sub-font: 'Playfair Display', serif;
+
+//Effects
+$normal-transition: all 0.4s ease-in-out;
+
+//Mixins
+
+@mixin base-button($base-color, $sub-color) {
+  display: inline-block;
+  border: 2px solid $base-color;
+  border-radius: 100px;
+  color: $base-color;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-family: $base-font;
+  font-size: $base-font-size * .8;
+  font-weight: 400;
+  transition: $normal-transition;
+  &:hover {
+    background: $base-color;
+    color: $sub-color;
+  }
+}
