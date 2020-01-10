@@ -5,3 +5,17 @@
 * {
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.bias-list {
+  border: 1px solid #343434;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+}
