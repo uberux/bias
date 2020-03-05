@@ -6,13 +6,14 @@ active: home
 <div class="">
   <h1>Bias list</h1>
   <div class="container">
-    <div class="row">
       {% for bias in site.data.bias %}
-      <div class="bias-list col-lg">
+      <div class="bias-item">
+        <div class="icon">
+          <img src="" alt="">
+        </div>
         <h2>{{ bias.name }}</h2>
         <p><a href="{{ bias.link }}"></a>{{ bias.short-description }}</p>
       </div>
       {% endfor %}
-    </div>
   </div>
 </div>
